@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archita Pandey // Interdimensional Portfolio</title>
+  <meta name="description" content="Personal portfolio of Archita Pandey — First-year CSE (AI/ML) student, researcher, and curious explorer from Pune, India.">
+  <meta name="author" content="Archita Pandey">
+  <meta name="theme-color" content="#080A0B">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Starfield / Cosmic Particle Canvas -->
+  <canvas id="cosmic-canvas" aria-hidden="true"></canvas>
+
+  <!-- CRT Scanline & Grain Overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements (Desktop only) -->
+  <div id="cursor-dot" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-mark" aria-label="Archita Pandey Home">
+        <span class="brand-code">AP//</span>
+        <span class="brand-id">ARCHITA.EXE</span>
+        <span class="status-pulse" title="System Online"></span>
+      </a>
+
+      <!-- Telemetry Chip -->
+      <div class="telemetry-badge desktop-only" aria-hidden="true">
+        <span class="badge-dot"></span>
+        <span class="badge-text">SECTOR: C-137 // PUNE_EARTH</span>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#robotics" class="nav-link">ROBOTICS</a></li>
+          <li><a href="#offduty" class="nav-link">OFF DUTY</a></li>
+          <li><a href="#contact" class="nav-link cta-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <span class="drawer-title">// NAVIGATION_OVERRIDE</span>
+        <span class="drawer-coord">DIM-404</span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link"><span>01</span> HOME</a></li>
+        <li><a href="#about" class="mobile-nav-link"><span>02</span> ABOUT</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><span>03</span> SKILLS</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span>04</span> PROJECTS</a></li>
+        <li><a href="#robotics" class="mobile-nav-link"><span>05</span> ROBOTICS</a></li>
+        <li><a href="#offduty" class="mobile-nav-link"><span>06</span> OFF DUTY</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span>07</span> CONTACT</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <span class="dim-status">PORTAL STABILITY: 99.8%</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ========================================== -->
+    <!-- SECTION A: HERO - AN UNKNOWN VARIABLE      -->
+    <!-- ========================================== -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+
+      <div class="hero-grid">
+        <!-- Hero Left Column: Narrative & Status -->
+        <div class="hero-content">
+          <div class="terminal-banner">
+            <span class="badge-lab">TRANSMISSION // SPECIMEN AP-18</span>
+            <span class="terminal-id">ID: 404-VARIABLE</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="title-sub">GREETINGS, INTERNET.</span>
+            <span class="title-main glitch-text" data-text="HI. I'M ARCHITA.">HI. I'M ARCHITA.</span>
+          </h1>
+
+          <p class="hero-tagline">
+            CURIOUS BY DESIGN. <span class="highlight-acid">CHAOTIC BY NATURE.</span>
+          </p>
+
+          <p class="hero-intro">
+            First-year CSE (AI/ML) student, enthusiastic researcher, occasional writer, and a human being with far too many questions.
+          </p>
+
+          <!-- Status Panel -->
+          <div class="hud-panel status-panel" aria-label="Specimen Status Panel">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="hud-header">
+              <span class="hud-dot"></span>
+              <span class="hud-title">LAB DIAGNOSTIC // ACTIVE SPECIMEN READOUT</span>
+              <span class="hud-coord">COORD: 18.5204° N, 73.8567° E</span>
+            </div>
+            <dl class="status-list">
+              <div class="status-item">
+                <dt>SPECIES:</dt>
+                <dd>HUMAN (PROBABLY)</dd>
+              </div>
+              <div class="status-item">
+                <dt>CURRENT LOCATION:</dt>
+                <dd>PUNE, EARTH</dd>
+              </div>
+              <div class="status-item">
+                <dt>PRIMARY DIRECTIVE:</dt>
+                <dd>FIGURE THINGS OUT</dd>
+              </div>
+              <div class="status-item">
+                <dt>SPECIALIZATION:</dt>
+                <dd class="cyan-accent">CURIOSITY</dd>
+              </div>
+              <div class="status-item">
+                <dt>SYSTEM STATUS:</dt>
+                <dd class="green-accent"><span class="blink">●</span> LEARNING IN PROGRESS</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Dynamic Terminal Status Line -->
+          <div class="terminal-line-container" aria-live="polite">
+            <span class="terminal-prompt">&gt;</span>
+            <span class="terminal-text" id="dynamic-terminal-text">curiosity.exe is running...</span>
+            <span class="terminal-cursor">_</span>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group">
+            <a href="#about" class="btn btn-primary">
+              <span class="btn-text">EXPLORE MY UNIVERSE</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span class="btn-text">VIEW PROJECT SLOTS</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: The Dimensional Portal Scene -->
+        <div class="hero-visual" aria-label="Animated Interdimensional Portal">
+          <div class="portal-scene" id="portal-scene">
+            <!-- Dimensional Ring System -->
+            <div class="portal-wrapper">
+              <!-- Outer Glow Layer -->
+              <div class="portal-flare" aria-hidden="true"></div>
+
+              <!-- Orbiting Particle Track 1 -->
+              <div class="orbit-track track-1" aria-hidden="true">
+                <div class="orbit-particle p1"></div>
+              </div>
+
+              <!-- Outer Tech Glyphs Ring -->
+              <svg class="portal-ring ring-outer" viewBox="0 0 500 500" aria-hidden="true">
+                <circle cx="250" cy="250" r="230" class="ring-track"/>
+                <circle cx="250" cy="250" r="230" class="ring-dash-1"/>
+                <circle cx="250" cy="250" r="215" class="ring-dash-2"/>
+                <!-- Dimensional Crosshairs and Tick Marks -->
+                <line x1="250" y1="5" x2="250" y2="25" class="ring-tick"/>
+                <line x1="250" y1="475" x2="250" y2="495" class="ring-tick"/>
+                <line x1="5" y1="250" x2="25" y2="250" class="ring-tick"/>
+                <line x1="475" y1="250" x2="495" y2="250" class="ring-tick"/>
+                <text x="250" y="38" text-anchor="middle" class="ring-text">SECTOR C-137 // ANOMALY DETECTED</text>
+                <text x="250" y="470" text-anchor="middle" class="ring-text">404.981 FLUX // FREQ 1420 MHZ</text>
+              </svg>
+
+              <!-- Middle Segmented Counter-rotating Ring -->
+              <svg class="portal-ring ring-mid" viewBox="0 0 500 500" aria-hidden="true">
+                <circle cx="250" cy="250" r="185" class="ring-cyan-dash"/>
+                <circle cx="250" cy="250" r="160" class="ring-purple-dots"/>
+              </svg>
+
+              <!-- Inner Swirl & Event Horizon -->
+              <div class="portal-core">
+                <div class="portal-vortex"></div>
+                <div class="portal-liquid"></div>
+                <div class="portal-singularity">
+                  <div class="singularity-eye">
+                    <span class="eye-pupil"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Diagnostic Tags around portal -->
+              <div class="floating-tag tag-top" aria-hidden="true">
+                <span class="tag-label">PORTAL: OPEN</span>
+                <span class="tag-val">FLOW: 99.4%</span>
+              </div>
+              <div class="floating-tag tag-right" aria-hidden="true">
+                <span class="tag-label">CURIOSITY GAIN</span>
+                <span class="tag-val">+∞ dB</span>
+              </div>
+              <div class="floating-tag tag-bottom" aria-hidden="true">
+                <span class="tag-label">SECURITY</span>
+                <span class="tag-val">OVERRIDDEN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-cue" aria-label="Scroll down to About section">
+        <div class="scroll-mouse" aria-hidden="true">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-label">INITIALIZE DESCENT</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION B: ABOUT - SPECIMEN 001: THE HUMAN -->
+    <!-- ========================================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// ARCHIVE_FILE_001</span>
+        <span class="section-title-tag">RESEARCH DOSSIER</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Column 1: Dossier Narrative -->
+        <div class="about-narrative">
+          <h2 class="section-headline" id="about-title">
+            <span class="headline-number">01</span>
+            <span class="headline-text">SPECIMEN 001: <span class="highlight-portal">THE HUMAN</span></span>
+          </h2>
+
+          <div class="report-box">
+            <div class="report-stamp">CONFIDENTIAL // LAB NOTES</div>
+            <p class="about-lead">
+              An 18-year-old first-year CSE (AI/ML) student at Newton School of Technology, Pune, studying at ADYPU. Interested in how things work, why people think the way they do, and what happens when curiosity meets technology.
+            </p>
+            <p class="about-body">
+              Currently exploring programming, robotics, research, and the fascinating space between ideas and things that actually work.
+            </p>
+          </div>
+
+          <div class="lab-footnotes">
+            <div class="footnote-item">
+              <span class="fn-sym">⌖</span>
+              <span class="fn-desc"><strong>Natural Habitat:</strong> Somewhere between algorithmic flowcharts and literature rabbit holes.</span>
+            </div>
+            <div class="footnote-item">
+              <span class="fn-sym">⚡</span>
+              <span class="fn-desc"><strong>Core Philosophy:</strong> If you're not slightly confused, you're not learning deep enough.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Specimen Hologram & Diagnostic Classification -->
+        <div class="about-diagnostics">
+          <!-- Central Specimen Orb graphic -->
+          <div class="specimen-orb-card">
+            <div class="orb-visual" aria-hidden="true">
+              <svg viewBox="0 0 300 300" class="specimen-svg">
+                <!-- Concentric reticles -->
+                <circle cx="150" cy="150" r="130" class="spec-grid-outer" />
+                <circle cx="150" cy="150" r="95" class="spec-grid-mid" />
+                <circle cx="150" cy="150" r="60" class="spec-grid-inner" />
+                <!-- Diagnostic axes -->
+                <line x1="150" y1="10" x2="150" y2="290" class="spec-axis" />
+                <line x1="10" y1="150" x2="290" y2="150" class="spec-axis" />
+                <!-- Orbiting satellites -->
+                <circle cx="150" cy="55" r="4" class="spec-node node-1" />
+                <circle cx="230" cy="190" r="5" class="spec-node node-2" />
+                <circle cx="70" cy="170" r="3" class="spec-node node-3" />
+                <!-- Human Silhouette / Brain Wave Vector -->
+                <path d="M110 150 Q130 110 150 150 T190 150" class="spec-wave wave-1" />
+                <path d="M120 160 Q150 130 180 160" class="spec-wave wave-2" />
+                <!-- Center point -->
+                <circle cx="150" cy="150" r="10" class="spec-center-pulse" />
+              </svg>
+              <div class="scan-bar" aria-hidden="true"></div>
+            </div>
+            <div class="specimen-caption">
+              <span>SCAN TARGET: ARCHITA PANDEY</span>
+              <span>BIO-SIGN: NOMINAL</span>
+            </div>
+          </div>
+
+          <!-- Playful Classification Panel -->
+          <div class="classification-panel">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="class-header">
+              <span class="class-tag">DIAGNOSTIC CLASSIFICATION MATRIX</span>
+              <span class="class-code">SEC-001/HUMAN</span>
+            </div>
+
+            <ul class="class-list">
+              <li class="class-row">
+                <span class="class-param">CURIOSITY LEVEL:</span>
+                <span class="class-value highlight-portal">UNREASONABLY HIGH</span>
+              </li>
+              <li class="class-row">
+                <span class="class-param">RESEARCH MODE:</span>
+                <span class="class-value cyan-accent">OCCASIONALLY ACTIVE</span>
+              </li>
+              <li class="class-row">
+                <span class="class-param">PROGRAMMING STATUS:</span>
+                <span class="class-value acid-accent">UNDER DEVELOPMENT</span>
+              </li>
+              <li class="class-row">
+                <span class="class-param">READING DIMENSION:</span>
+                <span class="class-value purple-accent">OPEN</span>
+              </li>
+              <li class="class-row clearance-denied">
+                <span class="class-param">ALIEN TECHNOLOGY ACCESS:</span>
+                <span class="class-value alert-red">NOT YET APPROVED</span>
+              </li>
+            </ul>
+
+            <div class="class-note">
+              <span class="note-label">OFFICER NOTE:</span>
+              <span class="note-text">Subject exhibits dangerous levels of question-asking. Recommend monitoring closely.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION C: SKILLS - CURRENTLY INSTALLED     -->
+    <!-- ========================================== -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// SUBSYSTEMS // INSTALLED_MODULES</span>
+        <span class="section-title-tag">CORE CAPABILITIES</span>
+      </div>
+
+      <div class="section-header-block">
+        <h2 class="section-headline" id="skills-title">
+          <span class="headline-number">02</span>
+          <span class="headline-text">CURRENTLY <span class="highlight-cyan">INSTALLED</span></span>
+        </h2>
+        <p class="section-subtext">
+          Primary modules currently operational. No inflated percentages or fictional seniority. Just genuine foundational skills being exercised daily.
+        </p>
+      </div>
+
+      <!-- Three Visually Distinct Skill Modules -->
+      <div class="skills-grid">
+        <!-- Module 1: Python -->
+        <article class="skill-card skill-python" data-skill="python">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="skill-top-bar">
+            <span class="skill-id">MOD-01 // RUNTIME</span>
+            <span class="skill-status-tag">ACTIVE</span>
+          </div>
+
+          <div class="skill-icon-container" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="skill-svg-icon">
+              <!-- Futuristic Python Nodes Matrix -->
+              <rect x="15" y="15" width="70" height="70" rx="12" class="skill-frame" />
+              <path d="M30 40 L50 25 L70 40 L50 55 Z" class="poly-top" />
+              <path d="M30 60 L50 45 L70 60 L50 75 Z" class="poly-bottom" />
+              <circle cx="50" cy="50" r="5" class="poly-core" />
+              <path d="M25 50 H35 M65 50 H75" class="connector-line" />
+            </svg>
+          </div>
+
+          <div class="skill-meta">
+            <span class="skill-category">PROGRAMMING</span>
+            <h3 class="skill-name">PYTHON</h3>
+          </div>
+
+          <p class="skill-description">
+            "Learning to turn logic into things that actually work."
+          </p>
+
+          <div class="skill-terminal-snippet">
+            <code>&gt;&gt;&gt; import logic<br>&gt;&gt;&gt; logic.execute()<br><span class="code-out"># Building foundations</span></code>
+          </div>
+        </article>
+
+        <!-- Module 2: Writing -->
+        <article class="skill-card skill-writing" data-skill="writing">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="skill-top-bar">
+            <span class="skill-id">MOD-02 // EXPRESSION</span>
+            <span class="skill-status-tag">ACTIVE</span>
+          </div>
+
+          <div class="skill-icon-container" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="skill-svg-icon">
+              <!-- Holographic quill & wave transmitter -->
+              <circle cx="50" cy="50" r="38" class="skill-frame-circle" />
+              <path d="M30 70 L70 30 M70 30 L55 30 M70 30 L70 45" class="vector-arrow" />
+              <path d="M25 65 Q45 80 75 65" class="waveform-svg" />
+              <circle cx="30" cy="70" r="3" class="poly-core" />
+              <circle cx="70" cy="30" r="3" class="poly-core" />
+            </svg>
+          </div>
+
+          <div class="skill-meta">
+            <span class="skill-category">COMMUNICATION</span>
+            <h3 class="skill-name">WRITING</h3>
+          </div>
+
+          <p class="skill-description">
+            "Words, observations, stories, and the occasional unnecessary philosophical detour."
+          </p>
+
+          <div class="skill-terminal-snippet">
+            <code>&gt; articulate(thought)<br>&gt; output: clear ideas<br><span class="code-out"># Human connection mode</span></code>
+          </div>
+        </article>
+
+        <!-- Module 3: Research -->
+        <article class="skill-card skill-research" data-skill="research">
+          <div class="card-glow" aria-hidden="true"></div>
+          <div class="skill-top-bar">
+            <span class="skill-id">MOD-03 // SCANNER</span>
+            <span class="skill-status-tag">ACTIVE</span>
+          </div>
+
+          <div class="skill-icon-container" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="skill-svg-icon">
+              <!-- Radar telescope & inquiry ray -->
+              <circle cx="50" cy="50" r="35" class="radar-outer" />
+              <circle cx="50" cy="50" r="20" class="radar-inner" />
+              <line x1="50" y1="50" x2="80" y2="25" class="radar-sweep" />
+              <circle cx="80" cy="25" r="4" class="radar-blip" />
+              <line x1="15" y1="50" x2="85" y2="50" class="radar-cross" />
+              <line x1="50" y1="15" x2="50" y2="85" class="radar-cross" />
+            </svg>
+          </div>
+
+          <div class="skill-meta">
+            <span class="skill-category">EXPLORATION</span>
+            <h3 class="skill-name">RESEARCH</h3>
+          </div>
+
+          <p class="skill-description">
+            "Following questions until they lead somewhere interesting."
+          </p>
+
+          <div class="skill-terminal-snippet">
+            <code>&gt; probe(depth=infinite)<br>&gt; rabbit_holes_found: 42<br><span class="code-out"># Hypothesis synthesis</span></code>
+          </div>
+        </article>
+      </div>
+
+      <!-- High-voltage Interests Strip -->
+      <div class="interests-banner-container" aria-label="Current Core Interests">
+        <div class="interests-label">// HIGH_FREQUENCY_INTERESTS:</div>
+        <div class="interests-marquee">
+          <div class="interests-track">
+            <span>ROBOTICS // AI &amp; ML // PROGRAMMING // SYSTEMS THAT DO INTERESTING THINGS</span>
+            <span aria-hidden="true"> // ROBOTICS // AI &amp; ML // PROGRAMMING // SYSTEMS THAT DO INTERESTING THINGS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION D: PROJECTS - EMPTY INVENTORY       -->
+    <!-- ========================================== -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// REPOSITORY // CONTAINMENT_STORAGE</span>
+        <span class="section-title-tag">VACANT SLOTS</span>
+      </div>
+
+      <div class="section-header-block">
+        <h2 class="section-headline" id="projects-title">
+          <span class="headline-number">03</span>
+          <span class="headline-text">EVERYTHING STARTS AS A <span class="highlight-acid">WEIRD IDEA.</span></span>
+        </h2>
+        <p class="section-subtext">
+          No completed projects in the lab yet. These containment units are reserved for whatever I build next.
+        </p>
+      </div>
+
+      <!-- 4 Containment Units (Empty Project Slots) -->
+      <div class="containment-grid">
+        <!-- Slot 1 -->
+        <!-- 
+          TO EDIT WHEN ARCHITA BUILDS HER FIRST PROJECT:
+          Replace the title, update description, add technologies in tech-tags, and link to your GitHub repo.
+        -->
+        <article class="containment-unit" id="slot-exp-001">
+          <div class="unit-laser-border" aria-hidden="true"></div>
+          <div class="unit-header">
+            <span class="unit-code">CONTAINMENT // EXP-001</span>
+            <span class="unit-status"><span class="amber-dot"></span> AWAITING FIRST CONTACT</span>
+          </div>
+
+          <div class="unit-chamber" aria-hidden="true">
+            <svg viewBox="0 0 200 120" class="chamber-svg">
+              <rect x="10" y="10" width="180" height="100" rx="8" class="chamber-box"/>
+              <line x1="10" y1="60" x2="190" y2="60" class="chamber-grid-line"/>
+              <line x1="100" y1="10" x2="100" y2="110" class="chamber-grid-line"/>
+              <!-- Hologram placeholder particle field -->
+              <circle cx="100" cy="60" r="22" class="containment-forcefield"/>
+              <circle cx="100" cy="60" r="4" class="containment-target"/>
+              <text x="100" y="96" text-anchor="middle" class="chamber-tech-label">VACUUM SEALED // READY</text>
+            </svg>
+            <div class="chamber-scanline"></div>
+          </div>
+
+          <div class="unit-body">
+            <h3 class="unit-title">[ FUTURE EXPERIMENT ]</h3>
+            <p class="unit-prompt">A future experiment goes here.</p>
+            <div class="unit-meta-row">
+              <span class="unit-tag">RESERVED: PYTHON / AI</span>
+              <span class="unit-coords">CHAMBER 01</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slot 2 -->
+        <!-- 
+          TO EDIT FOR PROJECT 2: Replace placeholder with your web, logic, or data science project.
+        -->
+        <article class="containment-unit" id="slot-exp-002">
+          <div class="unit-laser-border" aria-hidden="true"></div>
+          <div class="unit-header">
+            <span class="unit-code">CONTAINMENT // EXP-002</span>
+            <span class="unit-status"><span class="amber-dot"></span> AWAITING FIRST CONTACT</span>
+          </div>
+
+          <div class="unit-chamber" aria-hidden="true">
+            <svg viewBox="0 0 200 120" class="chamber-svg">
+              <rect x="10" y="10" width="180" height="100" rx="8" class="chamber-box"/>
+              <path d="M30 40 L60 80 L100 35 L140 75 L170 45" class="chamber-wire-path"/>
+              <circle cx="60" cy="80" r="4" class="containment-target"/>
+              <circle cx="100" cy="35" r="4" class="containment-target"/>
+              <circle cx="140" cy="75" r="4" class="containment-target"/>
+              <text x="100" y="102" text-anchor="middle" class="chamber-tech-label">WEIGHTS: UNINITIALIZED</text>
+            </svg>
+            <div class="chamber-scanline"></div>
+          </div>
+
+          <div class="unit-body">
+            <h3 class="unit-title">[ NEURAL PROTOTYPE ]</h3>
+            <p class="unit-prompt">A future experiment goes here.</p>
+            <div class="unit-meta-row">
+              <span class="unit-tag">RESERVED: ML MODEL</span>
+              <span class="unit-coords">CHAMBER 02</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slot 3 -->
+        <!-- 
+          TO EDIT FOR PROJECT 3: Replace placeholder with your research-backed engineering prototype.
+        -->
+        <article class="containment-unit" id="slot-exp-003">
+          <div class="unit-laser-border" aria-hidden="true"></div>
+          <div class="unit-header">
+            <span class="unit-code">CONTAINMENT // EXP-003</span>
+            <span class="unit-status"><span class="amber-dot"></span> AWAITING FIRST CONTACT</span>
+          </div>
+
+          <div class="unit-chamber" aria-hidden="true">
+            <svg viewBox="0 0 200 120" class="chamber-svg">
+              <rect x="10" y="10" width="180" height="100" rx="8" class="chamber-box"/>
+              <!-- Hexagonal quantum container -->
+              <polygon points="100,25 140,45 140,85 100,105 60,85 60,45" class="chamber-hex"/>
+              <circle cx="100" cy="65" r="8" class="containment-forcefield"/>
+              <text x="100" y="69" text-anchor="middle" class="hex-core-label">0</text>
+            </svg>
+            <div class="chamber-scanline"></div>
+          </div>
+
+          <div class="unit-body">
+            <h3 class="unit-title">[ ALGORITHM SUITE ]</h3>
+            <p class="unit-prompt">A future experiment goes here.</p>
+            <div class="unit-meta-row">
+              <span class="unit-tag">RESERVED: DATA PIPELINE</span>
+              <span class="unit-coords">CHAMBER 03</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slot 4 -->
+        <!-- 
+          TO EDIT FOR PROJECT 4: Replace placeholder with your experimental creative coding project.
+        -->
+        <article class="containment-unit" id="slot-exp-004">
+          <div class="unit-laser-border" aria-hidden="true"></div>
+          <div class="unit-header">
+            <span class="unit-code">CONTAINMENT // EXP-004</span>
+            <span class="unit-status"><span class="amber-dot"></span> AWAITING FIRST CONTACT</span>
+          </div>
+
+          <div class="unit-chamber" aria-hidden="true">
+            <svg viewBox="0 0 200 120" class="chamber-svg">
+              <rect x="10" y="10" width="180" height="100" rx="8" class="chamber-box"/>
+              <!-- Signal emitter lines -->
+              <path d="M40 60 Q70 20 100 60 T160 60" class="chamber-wire-path"/>
+              <path d="M50 70 Q100 110 150 70" class="chamber-grid-line"/>
+              <circle cx="100" cy="60" r="5" class="containment-target"/>
+              <text x="100" y="102" text-anchor="middle" class="chamber-tech-label">PORT PROTOCOL // LISTENING</text>
+            </svg>
+            <div class="chamber-scanline"></div>
+          </div>
+
+          <div class="unit-body">
+            <h3 class="unit-title">[ INTERACTIVE ARTIFACT ]</h3>
+            <p class="unit-prompt">A future experiment goes here.</p>
+            <div class="unit-meta-row">
+              <span class="unit-tag">RESERVED: WEB / EXP</span>
+              <span class="unit-coords">CHAMBER 04</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Playful Terminal Footer for Projects -->
+      <div class="projects-terminal-footer">
+        <span class="term-flag">&gt;</span>
+        <span class="term-msg">No projects detected. This is a temporary condition.</span>
+        <span class="term-sub">CONTAINMENT PRESSURE: CALIBRATED // EXP-READY</span>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION E: ROBOTICS - HARDWARE LAB BAY     -->
+    <!-- ========================================== -->
+    <section class="section robotics-section" id="robotics" aria-labelledby="robotics-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// BAY_07 // KINEMATICS &amp; EMBEDDED</span>
+        <span class="section-title-tag">PHYSICAL COMPUTING</span>
+      </div>
+
+      <div class="robotics-header-block">
+        <div class="robo-meta-coord">BAY COORD: [37.98 // PHYSICAL INTERFACE]</div>
+        <h2 class="section-headline" id="robotics-title">
+          <span class="headline-number">04</span>
+          <span class="headline-text">ONE DAY, <span class="highlight-portal">THESE WILL MOVE.</span></span>
+        </h2>
+        <p class="section-subtext">
+          Robotics is one of the areas I want to explore as I learn more about programming, intelligent systems, and the relationship between software and the physical world.
+        </p>
+      </div>
+
+      <!-- Robotics Experiment Slots -->
+      <div class="robotics-slots-grid">
+        <!-- Robo Slot 1 -->
+        <!-- 
+          TO EDIT WHEN ARCHITA BUILDS HER FIRST ROBOTICS EXPERIMENT:
+          Replace blueprint labels with your microcontroller (Arduino/ESP32/Raspberry Pi), servos, sensors, and hardware logs.
+        -->
+        <div class="robo-bay-card" id="slot-robo-001">
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+
+          <div class="robo-card-header">
+            <div class="robo-serial">
+              <span class="robo-led yellow"></span>
+              <span class="serial-text">ROBO-001</span>
+            </div>
+            <span class="robo-stage">FIRST EXPERIMENT PENDING</span>
+          </div>
+
+          <!-- Wireframe Schematic Graphic -->
+          <div class="schematic-viewport" aria-hidden="true">
+            <svg viewBox="0 0 400 240" class="schematic-svg">
+              <!-- Technical Grid -->
+              <defs>
+                <pattern id="robo-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(83, 246, 255, 0.08)" stroke-width="0.8"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#robo-grid)"/>
+
+              <!-- Robotic Arm Manipulator Blueprint Wireframe -->
+              <path d="M60 210 L140 210 M100 210 L100 170" class="blueprint-line base-line"/>
+              <circle cx="100" cy="170" r="14" class="blueprint-joint"/>
+              <line x1="100" y1="170" x2="180" y2="100" class="blueprint-limb arm-1"/>
+              <circle cx="180" cy="100" r="12" class="blueprint-joint"/>
+              <line x1="180" y1="100" x2="270" y2="70" class="blueprint-limb arm-2"/>
+              <circle cx="270" cy="70" r="9" class="blueprint-joint"/>
+              <!-- End Effector Claw -->
+              <path d="M270 70 L300 50 L315 55 M270 70 L300 90 L315 85" class="blueprint-claw"/>
+
+              <!-- Dimension & Degree Overlay Lines -->
+              <path d="M120 170 A 25 25 0 0 0 115 155" class="angle-arc"/>
+              <text x="135" y="165" class="schematic-text">θ1 = 45.0°</text>
+              <path d="M200 100 A 25 25 0 0 0 205 85" class="angle-arc"/>
+              <text x="220" y="95" class="schematic-text">θ2 = -28.4°</text>
+              <text x="28" y="35" class="schematic-tag">ACTUATORS: IDLE // PWM: OFF</text>
+              <text x="28" y="55" class="schematic-tag">KINEMATICS: FORWARD SOLVER</text>
+            </svg>
+            <div class="schematic-crosshairs"></div>
+          </div>
+
+          <div class="robo-card-details">
+            <h3 class="robo-slot-title">ROBO-001 — FIRST EXPERIMENT PENDING</h3>
+            <p class="robo-slot-desc">
+              Dedicated testbay for initial micro-actuator testing, sensor polling, or autonomous kinetic exploration. Hardware schematics pre-loaded in memory.
+            </p>
+            <div class="robo-specs-table">
+              <div class="spec-col">
+                <span class="spec-k">POWER STATE:</span>
+                <span class="spec-v">STANDBY (0V)</span>
+              </div>
+              <div class="spec-col">
+                <span class="spec-k">FIRMWARE:</span>
+                <span class="spec-v">READY FOR FLASH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robo Slot 2 -->
+        <!-- 
+          TO EDIT WHEN ARCHITA BUILDS HER SECOND ROBOTICS EXPERIMENT:
+          Replace hardware summoned status with your sensor-fusion, autonomous rover, or kinetic robot.
+        -->
+        <div class="robo-bay-card" id="slot-robo-002">
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+
+          <div class="robo-card-header">
+            <div class="robo-serial">
+              <span class="robo-led cyan"></span>
+              <span class="serial-text">ROBO-002</span>
+            </div>
+            <span class="robo-stage">HARDWARE NOT YET SUMMONED</span>
+          </div>
+
+          <!-- Wireframe Schematic Graphic -->
+          <div class="schematic-viewport" aria-hidden="true">
+            <svg viewBox="0 0 400 240" class="schematic-svg">
+              <rect width="100%" height="100%" fill="url(#robo-grid)"/>
+
+              <!-- Mobile Hexapod / Rover Kinematic Blueprint -->
+              <!-- Chassis outline -->
+              <polygon points="150,100 250,100 270,140 250,180 150,180 130,140" class="chassis-poly"/>
+              <!-- Central Sensor Mast -->
+              <circle cx="200" cy="140" r="16" class="blueprint-joint"/>
+              <line x1="200" y1="140" x2="200" y2="60" class="blueprint-limb"/>
+              <polygon points="190,60 210,60 200,45" class="sensor-mast"/>
+
+              <!-- Symmetrical Walking Struts -->
+              <path d="M150 110 L100 80 L70 100" class="blueprint-limb"/>
+              <path d="M130 140 L70 140 L45 155" class="blueprint-limb"/>
+              <path d="M150 170 L100 200 L75 190" class="blueprint-limb"/>
+
+              <path d="M250 110 L300 80 L330 100" class="blueprint-limb"/>
+              <path d="M270 140 L330 140 L355 155" class="blueprint-limb"/>
+              <path d="M250 170 L300 200 L325 190" class="blueprint-limb"/>
+
+              <text x="28" y="35" class="schematic-tag">PLATFORM: AUTONOMOUS PLATFORM</text>
+              <text x="28" y="55" class="schematic-tag">TELEMETRY: AWAITING CHASSIS ASSEMBLY</text>
+            </svg>
+            <div class="schematic-crosshairs"></div>
+          </div>
+
+          <div class="robo-card-details">
+            <h3 class="robo-slot-title">ROBO-002 — HARDWARE NOT YET SUMMONED</h3>
+            <p class="robo-slot-desc">
+              Reserved for autonomous locomotion, computer vision integration, or physical systems responding to environmental telemetry.
+            </p>
+            <div class="robo-specs-table">
+              <div class="spec-col">
+                <span class="spec-k">PHYSICAL CHASSIS:</span>
+                <span class="spec-v">UNSUMMONED</span>
+              </div>
+              <div class="spec-col">
+                <span class="spec-k">NEURAL LINK:</span>
+                <span class="spec-v">SYNAPSE PENDING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION F: PERSONALITY - OFF-DUTY SIMULATION -->
+    <!-- ========================================== -->
+    <section class="section offduty-section" id="offduty" aria-labelledby="offduty-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// RECREATIONAL_MATRIX // REALITY_DIVERGENCE</span>
+        <span class="section-title-tag">HUMAN SIMULATION</span>
+      </div>
+
+      <div class="section-header-block">
+        <h2 class="section-headline" id="offduty-title">
+          <span class="headline-number">05</span>
+          <span class="headline-text">OFF-DUTY <span class="highlight-purple">SIMULATION</span></span>
+        </h2>
+        <p class="section-subtext">
+          What happens when the terminals disconnect and human curiosity wanders into fictional worlds, deep waters, and literary obsessions.
+        </p>
+      </div>
+
+      <!-- Interactive Dimension Selector Tabs -->
+      <div class="dimension-selector-wrapper">
+        <div class="selector-heading">SELECT ACTIVE DIMENSION:</div>
+        <div class="dimension-tabs" role="tablist" aria-label="Personality Dimensions">
+          <button class="dimension-tab active" id="tab-dim-1" role="tab" aria-selected="true" aria-controls="panel-dim-1" data-dim="library">
+            <span class="tab-index">DIM 01</span>
+            <span class="tab-name">THE LIBRARY</span>
+          </button>
+          <button class="dimension-tab" id="tab-dim-2" role="tab" aria-selected="false" aria-controls="panel-dim-2" data-dim="cinema">
+            <span class="tab-index">DIM 02</span>
+            <span class="tab-name">THE CINEMATIC UNIVERSE</span>
+          </button>
+          <button class="dimension-tab" id="tab-dim-3" role="tab" aria-selected="false" aria-controls="panel-dim-3" data-dim="aquatic">
+            <span class="tab-index">DIM 03</span>
+            <span class="tab-name">THE AQUATIC REALM</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Interactive Dimension Display Panel -->
+      <div class="dimension-display-card" id="dimension-display">
+        <!-- Dimension 1: The Library -->
+        <div class="dim-panel active" id="panel-dim-1" role="tabpanel" aria-labelledby="tab-dim-1">
+          <div class="dim-grid">
+            <div class="dim-visual-container" aria-hidden="true">
+              <svg viewBox="0 0 320 240" class="dim-svg">
+                <!-- Glowing Floating Books & Cosmic Ink -->
+                <circle cx="160" cy="120" r="90" class="dim-halo halo-purple"/>
+                <!-- Open Book Pages Vector -->
+                <path d="M160 170 C130 150 90 155 70 175 L70 85 C90 65 130 60 160 80 Z" class="book-page page-left"/>
+                <path d="M160 170 C190 150 230 155 250 175 L250 85 C230 65 190 60 160 80 Z" class="book-page page-right"/>
+                <line x1="160" y1="80" x2="160" y2="170" class="book-spine"/>
+                <!-- Dimensional Floating Text Runes -->
+                <line x1="85" y1="95" x2="140" y2="95" class="rune-line"/>
+                <line x1="85" y1="115" x2="145" y2="115" class="rune-line"/>
+                <line x1="85" y1="135" x2="130" y2="135" class="rune-line"/>
+                <line x1="175" y1="95" x2="235" y2="95" class="rune-line"/>
+                <line x1="175" y1="115" x2="230" y2="115" class="rune-line"/>
+                <line x1="175" y1="135" x2="220" y2="135" class="rune-line"/>
+                <!-- Floating Starlight Sparkles -->
+                <circle cx="90" cy="50" r="2.5" class="star-sparkle"/>
+                <circle cx="230" cy="45" r="3" class="star-sparkle"/>
+                <circle cx="160" cy="40" r="2" class="star-sparkle"/>
+              </svg>
+            </div>
+            <div class="dim-content">
+              <div class="dim-badge">
+                <span class="dim-marker">CURRENT JUMP: DIMENSION 01</span>
+                <span class="dim-freq">FREQ: 99.8 MHz (PARALLEL LORDS)</span>
+              </div>
+              <h3 class="dim-title">THE LIBRARY</h3>
+              <p class="dim-body">
+                Literature, classics, interesting sentences, strange ideas, and books that make you stare at a wall afterwards.
+              </p>
+              <div class="dim-humor-card">
+                <span class="quote-sym">“</span>
+                <span class="quote-text">One more chapter. Famous last words.</span>
+              </div>
+              <div class="dim-meta-tags">
+                <span class="d-tag">CLASSICS</span>
+                <span class="d-tag">INTERESTING SENTENCES</span>
+                <span class="d-tag">UNRESOLVED DILEMMAS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dimension 2: The Cinematic Universe -->
+        <div class="dim-panel" id="panel-dim-2" role="tabpanel" aria-labelledby="tab-dim-2" hidden>
+          <div class="dim-grid">
+            <div class="dim-visual-container" aria-hidden="true">
+              <svg viewBox="0 0 320 240" class="dim-svg">
+                <!-- Cosmic Projector & Film Reel -->
+                <circle cx="160" cy="120" r="90" class="dim-halo halo-cyan"/>
+                <!-- Projector Beams -->
+                <polygon points="90,120 260,60 260,180" class="projector-beam"/>
+                <!-- Film Reel Wheel -->
+                <circle cx="90" cy="120" r="45" class="reel-outer"/>
+                <circle cx="90" cy="120" r="14" class="reel-hub"/>
+                <circle cx="90" cy="88" r="8" class="reel-hole"/>
+                <circle cx="90" cy="152" r="8" class="reel-hole"/>
+                <circle cx="58" cy="120" r="8" class="reel-hole"/>
+                <circle cx="122" cy="120" r="8" class="reel-hole"/>
+                <!-- Floating Frame Strip -->
+                <rect x="235" y="75" width="40" height="90" rx="4" class="film-frame-strip"/>
+                <line x1="235" y1="105" x2="275" y2="105" class="film-line"/>
+                <line x1="235" y1="135" x2="275" y2="135" class="film-line"/>
+              </svg>
+            </div>
+            <div class="dim-content">
+              <div class="dim-badge">
+                <span class="dim-marker">CURRENT JUMP: DIMENSION 02</span>
+                <span class="dim-freq">FRAME: 24 FPS // ANAMORPHIC</span>
+              </div>
+              <h3 class="dim-title">THE CINEMATIC UNIVERSE</h3>
+              <p class="dim-body">
+                Bollywood drama, Hollywood chaos, fictional people making questionable decisions, and the eternal debate over what makes a movie memorable.
+              </p>
+              <div class="dim-humor-card">
+                <span class="quote-sym">“</span>
+                <span class="quote-text">The plot was good. The ending is under investigation.</span>
+              </div>
+              <div class="dim-meta-tags">
+                <span class="d-tag">BOLLYWOOD DRAMA</span>
+                <span class="d-tag">HOLLYWOOD CHAOS</span>
+                <span class="d-tag">SCRIPT ANALYSIS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dimension 3: The Aquatic Realm -->
+        <div class="dim-panel" id="panel-dim-3" role="tabpanel" aria-labelledby="tab-dim-3" hidden>
+          <div class="dim-grid">
+            <div class="dim-visual-container" aria-hidden="true">
+              <svg viewBox="0 0 320 240" class="dim-svg">
+                <!-- Underwater Waves & Bioluminescence -->
+                <circle cx="160" cy="120" r="90" class="dim-halo halo-acid"/>
+                <path d="M40 90 Q100 60 160 90 T280 90" class="aqua-wave wave-top"/>
+                <path d="M40 130 Q100 160 160 130 T280 130" class="aqua-wave wave-mid"/>
+                <path d="M40 170 Q100 140 160 170 T280 170" class="aqua-wave wave-low"/>
+                <!-- Rising Bioluminescent Bubbles -->
+                <circle cx="110" cy="160" r="6" class="aqua-bubble"/>
+                <circle cx="140" cy="110" r="10" class="aqua-bubble"/>
+                <circle cx="190" cy="140" r="7" class="aqua-bubble"/>
+                <circle cx="210" cy="80" r="5" class="aqua-bubble"/>
+                <circle cx="160" cy="60" r="8" class="aqua-bubble"/>
+              </svg>
+            </div>
+            <div class="dim-content">
+              <div class="dim-badge">
+                <span class="dim-marker">CURRENT JUMP: DIMENSION 03</span>
+                <span class="dim-freq">HYDROSTATIC PRESSURE: 1.0 ATM</span>
+              </div>
+              <h3 class="dim-title">THE AQUATIC REALM</h3>
+              <p class="dim-body">
+                Swimming, underwater quiet, and temporarily escaping the internet.
+              </p>
+              <div class="dim-humor-card">
+                <span class="quote-sym">“</span>
+                <span class="quote-text">Brain temporarily unavailable. Probably swimming.</span>
+              </div>
+              <div class="dim-meta-tags">
+                <span class="d-tag">SWIMMING</span>
+                <span class="d-tag">UNDERWATER SILENCE</span>
+                <span class="d-tag">ANALOG RECOVERY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Playful Community Concept: The Common Room -->
+      <aside class="common-room-module" aria-label="Future Community Experiment Concept">
+        <div class="hud-corner top-left"></div>
+        <div class="hud-corner top-right"></div>
+        <div class="hud-corner bottom-left"></div>
+        <div class="hud-corner bottom-right"></div>
+
+        <div class="common-room-header">
+          <div class="concept-chip">
+            <span class="chip-dot"></span>
+            <span class="chip-text">EXPERIMENTAL COMMUNITY CONCEPT // FUTURE PROTOCOL</span>
+          </div>
+          <span class="status-badge-ghost">HYPOTHETICAL</span>
+        </div>
+
+        <div class="common-room-body">
+          <h3 class="common-room-title">THE COMMON ROOM</h3>
+          <p class="common-room-quote">
+            "A hypothetical corner of the internet for book recommendations, movie arguments, strange questions, and conversations that start with 'hear me out'."
+          </p>
+          <p class="common-room-disclaimer">
+            * Note: Not yet launched or running. This is a design blueprint for future casual gatherings, creative experiments, and interdimensional debates.
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION G: CONTACT - ESTABLISH COMMUNICATION -->
+    <!-- ========================================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-badge-bar">
+        <span class="section-code">// BEACON // FREQ_1420.405_MHZ</span>
+        <span class="section-title-tag">UPLINK TRANSMISSION</span>
+      </div>
+
+      <div class="contact-container">
+        <!-- Visual Transmission Portal Mini -->
+        <div class="contact-beacon-visual" aria-hidden="true">
+          <div class="beacon-pulse"></div>
+          <div class="beacon-core"></div>
+        </div>
+
+        <div class="contact-header-block">
+          <h2 class="section-headline contact-headline" id="contact-title">
+            FOUND SOMETHING <span class="highlight-portal">INTERESTING?</span>
+          </h2>
+          <p class="contact-subtext">
+            Have an interesting idea, a book recommendation, a movie argument, or a technology rabbit hole worth exploring? Send a transmission.
+          </p>
+        </div>
+
+        <!-- Transmission Terminal Console -->
+        <div class="transmission-console">
+          <div class="hud-corner top-left"></div>
+          <div class="hud-corner top-right"></div>
+          <div class="hud-corner bottom-left"></div>
+          <div class="hud-corner bottom-right"></div>
+
+          <div class="console-header">
+            <span class="console-label">UPLINK CHANNELS // DIRECT DISPATCH</span>
+            <span class="console-status">ENCRYPTED // CLEAR CHANNEL</span>
+          </div>
+
+          <!-- Email Transmission Unit -->
+          <div class="transmission-row">
+            <div class="channel-info">
+              <span class="channel-type">PRIMARY TRANSMISSION PROTOCOL:</span>
+              <!-- 
+                EMAIL CONFIGURATION NOTE FOR ARCHITA:
+                Replace "archita.placeholder@example.com" with your actual email address.
+                The Copy button and Mail link will automatically use whatever email is written here.
+              -->
+              <span class="channel-value" id="display-email" data-email="archita.placeholder@example.com">
+                archita.placeholder@example.com
+              </span>
+              <span class="channel-notice">(Replace with your active email address in portfolio.html)</span>
+            </div>
+
+            <div class="channel-actions">
+              <button class="btn btn-action" id="copy-email-btn" aria-label="Copy transmission email address to clipboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span id="copy-btn-text">COPY TRANSMISSION ADDR</span>
+              </button>
+              <a href="mailto:archita.placeholder@example.com" class="btn btn-action-ghost" id="direct-email-link" aria-label="Open default mail client">
+                <span>LAUNCH MAIL CLIENT</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Network Uplinks (Configurable Placeholders) -->
+          <div class="uplinks-grid">
+            <!-- 
+              GITHUB PLACEHOLDER:
+              Replace "https://github.com/your-username" with your actual GitHub profile link.
+            -->
+            <div class="uplink-item">
+              <span class="uplink-label">CODE VAULT (GITHUB):</span>
+              <a href="#" class="uplink-link placeholder-link" data-url="https://github.com/your-username" data-network="GitHub" aria-label="GitHub Profile Placeholder">
+                <span class="link-url">GITHUB.COM/[YOUR_USERNAME]</span>
+                <span class="placeholder-badge">CONFIGURE IN HTML</span>
+              </a>
+            </div>
+
+            <!-- 
+              LINKEDIN PLACEHOLDER:
+              Replace "https://linkedin.com/in/your-profile" with your actual LinkedIn profile link.
+            -->
+            <div class="uplink-item">
+              <span class="uplink-label">PROFESSIONAL FREQ (LINKEDIN):</span>
+              <a href="#" class="uplink-link placeholder-link" data-url="https://linkedin.com/in/your-profile" data-network="LinkedIn" aria-label="LinkedIn Profile Placeholder">
+                <span class="link-url">LINKEDIN.COM/IN/[YOUR_PROFILE]</span>
+                <span class="placeholder-badge">CONFIGURE IN HTML</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Feedback Toast / Alert banner -->
+          <div class="copy-alert" id="copy-alert" role="status" aria-live="polite">
+            <span class="alert-icon">✓</span>
+            <span class="alert-text">COPIED TO CLIPBOARD: Ready for transmission!</span>
+          </div>
+        </div>
+
+        <!-- Transmission Sign-off Callout -->
+        <div class="transmission-signoff">
+          <div class="signoff-line line-1">ARCHITA PANDEY // EARTH INSTANCE 001</div>
+          <div class="signoff-line line-2">END OF TRANSMISSION. MORE EXPERIMENTS LOADING...</div>
+        </div>
+
+        <!-- Back to Top Control -->
+        <div class="back-to-top-container">
+          <a href="#hero" class="btn-return-orbit" id="back-to-top" aria-label="Return to top of page">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+            <span>RETURN TO ORBIT</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">AP//2026</span>
+        <span class="footer-divider">|</span>
+        <span class="footer-specimen">ARCHITA PANDEY // CSE (AI/ML)</span>
+      </div>
+      <div class="footer-center">
+        <span class="footer-status-msg">
+          <span class="live-dot"></span> ALL DIMENSIONS NOMINAL // NO TIMELINE PARADOXES DETECTED
+        </span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-tech">BUILT WITH VANILLA PROTOCOLS // HTML5 • CSS3 • JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog for Unconfigured External Links -->
+  <div class="modal-backdrop" id="link-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-tag">// NETWORK LINK PENDING</span>
+        <button class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <h3 class="modal-title" id="modal-title">Link Configuration Required</h3>
+      <p class="modal-body" id="modal-body">
+        This profile link has not yet been connected to your personal account. To set it up, open <code>portfolio.html</code> and edit the <code>href</code> attribute.
+      </p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="modal-ok-btn">UNDERSTOOD</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
